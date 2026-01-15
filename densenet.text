@@ -1,0 +1,24 @@
+Input: 224 × 224 × 3
+↓
+Conv 7×7 → ReLU → MaxPool
+↓
+Dense Block
+  (Each layer connected to all previous layers)
+↓
+Transition Layer (1×1 Conv + Avg Pool)
+↓
+Dense Block
+↓
+Transition Layer
+↓
+Dense Block
+↓
+Transition Layer
+↓
+Dense Block
+↓
+Global Average Pooling
+↓
+Dense (Classes) → Softmax
+
+x_l = H_l([x_0, x_1, x_2, ..., x_{l-1}])

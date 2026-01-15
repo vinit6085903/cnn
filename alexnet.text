@@ -1,0 +1,10 @@
+Input: 224×224×3
+Conv → ReLU → MaxPool
+Conv → ReLU → MaxPool
+Conv → ReLU
+Conv → ReLU
+Conv → ReLU → MaxPool
+Flatten
+Dense 4096
+Dense 4096
+Dense Classes (Softmax)

@@ -1,0 +1,17 @@
+Input (32×32×1)
+↓
+Conv1 (6 filters, 5×5) + Tanh
+↓
+Avg Pooling (2×2)
+↓
+Conv2 (16 filters, 5×5) + Tanh
+↓
+Avg Pooling (2×2)
+↓
+Flatten
+↓
+Dense (120) + Tanh
+↓
+Dense (84) + Tanh
+↓
+Dense (10) + Softmax

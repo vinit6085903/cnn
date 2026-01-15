@@ -1,0 +1,17 @@
+Input: 224 × 224 × 3
+↓
+Conv 3×3 → ReLU
+↓
+Depthwise Conv 3×3 → ReLU
+Pointwise Conv 1×1 → ReLU
+↓
+Depthwise Conv
+Pointwise Conv
+↓
+(repeat blocks)
+↓
+Global Average Pooling
+↓
+Dense (Classes) → Softmax
+Standard Conv = Spatial + Channel mixing (heavy)
+Depthwise Separable Conv = Depthwise + Pointwise (light)

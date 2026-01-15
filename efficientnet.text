@@ -1,0 +1,20 @@
+Input: 224 × 224 × 3
+↓
+Stem Conv (3×3)
+↓
+MBConv Block
+  (Depthwise Conv + Pointwise Conv + SE Block)
+↓
+MBConv Block × N
+↓
+MBConv Block × N
+↓
+MBConv Block × N
+↓
+Global Average Pooling
+↓
+Dense (Classes) → Softmax
+
+Depth  = α^φ
+Width  = β^φ
+Resolution = γ^φ

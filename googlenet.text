@@ -1,0 +1,27 @@
+Input: 224 × 224 × 3
+↓
+Conv 7×7 → ReLU → MaxPool
+↓
+Conv 1×1 → Conv 3×3 → MaxPool
+↓
+Inception Module (1×1, 3×3, 5×5, MaxPool)
+↓
+Inception Module
+↓
+Max Pooling
+↓
+Inception Module
+↓
+Inception Module
+↓
+Inception Module
+↓
+Inception Module
+↓
+Inception Module
+↓
+Average Pooling
+↓
+Dropout
+↓
+Dense (Classes) → Softmax

@@ -1,0 +1,18 @@
+Input: 224 × 224 × 3
+↓
+Conv 7×7 → ReLU → MaxPool
+↓
+Residual Block × N
+  (Conv → ReLU → Conv + Skip Connection)
+↓
+Residual Block × N
+↓
+Residual Block × N
+↓
+Residual Block × N
+↓
+Global Average Pooling
+↓
+Dense (Classes) → Softmax
+
+Output = F(x) + x
